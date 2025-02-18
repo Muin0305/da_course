@@ -123,7 +123,18 @@ from track
 where 
 	composer is not null -- выводим все непустые значения
 	
+select *
+from track
+;
+select 
+	max (total),
+	min (total)
+from invoice;
 
+select 
+	country
+from customer
+;
 
 
 
