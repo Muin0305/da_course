@@ -1,5 +1,5 @@
 
-# hw1_on_st.py
+# Сиддиков Мухин
 import pandas as pd
 import plotly.express as px
 from sqlalchemy import text
