@@ -24,22 +24,18 @@ def set_connection():
     pg = eng.connect()
 
     return pg
-# Загрузка данных из таблицы invoice
 query =text("SELECT * FROM invoice;")
 with set_connection() as conn:
     df = pd.read_sql(query, conn)
 
 
-# app.py
 import streamlit as st
 import pandas as pd
 import plotly.express as px
 
 
-# Заголовок приложения
 st.title("Chinook Sales Report")
 
-# Функция загрузки данных
 @st.cache_data
 def load_data():
     engine = set_connection()
